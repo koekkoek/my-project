@@ -21,8 +21,8 @@ jobs:
     needs: run-tests
     runs-on: ubuntu-20.04
     steps:
-      - name: Executing remote ssh and update Flask app
-        uses: appleboy/ssh-action@master
+      - name: SSH Remote Commands
+        uses: appleboy/ssh-action@v1.0.0
         with:
           host: ${{ secrets.HOST }}
           port: ${{ secrets.PORT }}
@@ -32,3 +32,4 @@ jobs:
               cd /home/farm
               git pull origin main
               systemctl restart --now farm
+          
