@@ -30,6 +30,6 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
               cd /home/farm
-              clone git@github.com:koekkoek/my-project.git # Old: git pull origin main
+              git clone git@github.com:koekkoek/my-project.git # Old: git pull origin main
               systemctl restart --now farm
           
