@@ -26,6 +26,7 @@ jobs:
         with:
           host: ${{ secrets.HOST }}
           port: ${{ secrets.PORT }}
+          fingerprint: ${{ secrets.FINGERPRINT }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
