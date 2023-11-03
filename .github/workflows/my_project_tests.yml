@@ -26,7 +26,6 @@ jobs:
         with:
           host: ${{ secrets.HOST }}
           port: ${{ secrets.PORT }}
-          passphrase: ${{ secrets.PASSPHRASE }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
