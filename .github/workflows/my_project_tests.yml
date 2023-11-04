@@ -31,7 +31,7 @@ jobs:
           script: |
               mkdir /home/farm
               cd /home/farm
-              git pull origin main # git clone git@github.com:koekkoek/my-project.git
+              git clone git@github.com:koekkoek/my-project.git # git pull origin main
               systemctl restart --now farm
               echo "Deployment succesfull to digital ocean"
           
